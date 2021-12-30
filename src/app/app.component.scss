@@ -1,0 +1,33 @@
+header{
+  height: 50px;
+  display: flex;
+  span {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    margin-right: auto;
+  }
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    margin-right: 15px;
+    a{
+      margin-right: 10px;
+    }
+  }
+}
+footer{
+  height: 50px;
+}
+.content{
+  //min-height: calc(100% - 50px - 50px);
+  height: calc(100% - 50px - 50px);
+  overflow: auto;
+  border: solid;
+  margin-right: 15px;
+}

@@ -1,0 +1,28 @@
+<div class="person-box">
+  <div class="person-title">
+    {{person.id}} - <app-icon [info]="getIcone()"></app-icon> {{person.name}}
+  </div>
+  <div class="person-details">
+
+    <div *ngIf="getContact()?.telFix" class="contact">
+      - Telephone FIx : {{getContact()?.telFix}}
+    </div>
+    <div *ngIf="getContact()?.telMobile" class="contact">
+      - Telephone Mobile : {{getContact()?.telMobile}}
+    </div>
+    <div *ngIf="getAdresse()" class="address">
+      <div *ngIf="getAdresse()?.rue">
+          {{getAdresse()?.rue}}
+      </div>
+      <div *ngIf="getAdresse()?.codePostal">
+        {{getAdresse()?.codePostal}}
+      </div>
+      <div *ngIf="getAdresse()?.ville">
+        {{getAdresse()?.ville}}
+      </div>
+      <div *ngIf="getAdresse()?.pays">
+        {{getAdresse()?.pays}}
+      </div>
+    </div>
+  </div>
+</div>

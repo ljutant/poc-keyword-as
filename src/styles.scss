@@ -1,0 +1,44 @@
+body {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.remarks{
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.left-box{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: solid darkcyan;
+}
+
+.person-box{
+  display: flex;
+  flex-wrap: wrap;
+  border: solid chocolate 0.5px;
+  margin-bottom: 5px;
+
+  .person-title{
+    min-width: 150px;
+  }
+  .person-details{
+    margin-left: 10px;
+  }
+}
+
+.address{
+  display: flex;
+  margin: 5px;
+  div{
+    margin-left: 5px;
+  }
+}
